@@ -1,0 +1,27 @@
+html {
+  font-family: "Fredoka One", sans-serif;
+}
+
+body {
+  background-image: repeating-linear-gradient(45deg, #b3fbff, #d4fdff, #c9fcff);
+}
+
+h1 {
+  color: #990073
+}
+
+p {
+  color: #c09;
+}
+
+ {
+  background-position: left center;
+}
+
+ {
+  max-width: 19em;
+}
+
+img {
+
+}
