@@ -4,28 +4,26 @@
   <meta charset="utf-8">
   <title>Frozen-Not-In-Time</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
   <link href="css/type.css" rel="stylesheet">
-  <link href="css/modules.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
 </head>
 <body>
-  <article class="grid">
-    <section class="text unit">
-      <div>
-        <h1 class="left center title">Ice Cream</h1>
-        <p class="intro">So sweet, creamy & delicious it’ll literally melt in your mouth!</p>
-        <p class="btn btn-ghost link">Enjoy Now!</p>
-      </div>
-    </section>
-    <section class="unit images">
-        <img class="block" src="images/cherry.svg" alt="">
-        <img class="block" src="images/vanilla-fudge.svg" alt="">
-        <img class="block" src="images/chocolate-chip.svg" alt="">
-        <img class="block" src="images/mint-chip.svg" alt="">
-        <img class="block" src="images/cone.svg" alt="">
-    </section>
+  <article class="grid height">
+    <div class="text unit xs-1 s-1 m-1-2 l-1-2">
+      <h1 class="left center title yotta">Ice Cream</h1>
+      <p class="intro">So sweet, creamy & delicious it’ll literally melt in your mouth!</p>
+      <p class="btn btn-ghost link">Enjoy Now!</p>
+    </div>
+    <div class="ice-cream unit xs-1 s-1 m-1-2 l-1-2 images relative">
+      <img class="block absolute icecreamp cherry" src="images/cherry.svg" alt="">
+      <img class="block absolute icecreamp vanilla" src="images/vanilla-fudge.svg" alt="">
+      <img class="block absolute icecreamp chocolate" src="images/chocolate-chip.svg" alt="">
+      <img class="block absolute icecreamp mint" src="images/mint-chip.svg" alt="">
+      <img class="block absolute icecreamp cone" src="images/cone.svg" alt="">
+    </div>
   </article>
 </body>
 </html>

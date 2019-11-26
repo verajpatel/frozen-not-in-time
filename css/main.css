@@ -7,21 +7,149 @@ body {
 }
 
 h1 {
-  color: #990073
+  color: #990073;
 }
 
 p {
   color: #c09;
 }
 
- {
-  background-position: left center;
+.btn, .btn-ghost {
+  color: #c09;
+  border-color: #990073;
+  transform: rotate(0deg);
 }
 
- {
+.title {
+  background-position: left center;
+    transform: rotate(-5deg);
+}
+
+.intro {
+  background-position: left center;
   max-width: 19em;
+    transform: rotate(-2deg);
+}
+
+.text {
+  position: absolute;
+  left: 20%;
+  bottom: 50%;
+  height: 180px;
+  width: 180px;
+  z-index: 30;
+  animation: text .5s
 }
 
 img {
+  position: relative;
+}
+
+.icecreamp {
+  bottom: 100%;
+  left: 145%;
+  height: 180px;
+  width: 180px;
+}
+
+.cherry {
+  /* transform: scale(.7) translate(0, -22.8em);
+  left: 135%;
+  top: 50%; */
+  z-index: 30;
+  animation: cherry 2.5s ease-in forwards;
+}
+
+.vanilla {
+  /* transform: scale(.7) translate(-.3em, -17.3em);
+  left: 135%;
+  top: 50%; */
+  z-index: 20;
+  animation: vanilla 2s ease-in forwards;
+}
+
+.chocolate {
+  /* transform: scale(.7) translate(1em, -12em);
+  left: 135%;
+  top: 50%; */
+  z-index: 10;
+  animation: choc-chip 1.5s ease-in forwards;
+}
+
+.mint {
+  /* transform: scale(.7) translate(0, -6em);
+  left: 135%;
+  top: 50%; */
+  animation: mint 1s ease-in forwards;
+}
+
+.cone {
+  /* transform: scale(.7) translate(0, 2em);
+  left: 135%;
+  top: 50%; */
+  animation: cone .5s ease-in forwards;
+}
+
+.height {
+  height: 480px;
+}
+
+@keyframes cone {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 0;
+  }
+
+}
+
+@keyframes mint {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 21%;
+  }
+}
+
+@keyframes choc-chip {
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 37%;
+  }
+
+}
+
+@keyframes vanilla {
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 52%;
+  }
+
+}
+
+@keyframes cherry {
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 68%;
+  }
+
+}
+
+@keyframes text {
 
 }
