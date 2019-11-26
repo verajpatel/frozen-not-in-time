@@ -22,13 +22,13 @@ p {
 
 .title {
   background-position: left center;
-    transform: rotate(-5deg);
+  transform: rotate(-5deg);
 }
 
 .intro {
   background-position: left center;
   max-width: 19em;
-    transform: rotate(-2deg);
+  transform: rotate(-2deg);
 }
 
 .text {
@@ -38,7 +38,7 @@ p {
   height: 180px;
   width: 180px;
   z-index: 30;
-  animation: text .5s
+  animation: text 3.5s
 }
 
 img {
@@ -151,5 +151,16 @@ img {
 }
 
 @keyframes text {
+  0% {
+  opacity: 0%
+  }
 
+  90% {
+  opacity: 50%
+  filter: blur(180px);
+  }
+
+  100% {
+  opacity: 100%;
+  }
 }
