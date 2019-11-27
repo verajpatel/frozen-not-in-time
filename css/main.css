@@ -2,8 +2,10 @@ html {
   font-family: "Fredoka One", sans-serif;
 }
 
-body {
-  background-image: repeating-linear-gradient(45deg, #b3fbff, #d4fdff, #c9fcff);
+.background {
+  background-image: repeating-linear-gradient(-33deg, #c9fcff 0%, #c9fcff 1%, #d4fdff 1.1%, #d4fdff 2%, #c9fcff 2.1%);
+  border-bottom: 8px #b3fbff;
+  border-top: 8px #b3fbff;
 }
 
 h1 {
@@ -14,10 +16,19 @@ p {
   color: #c09;
 }
 
-.btn, .btn-ghost {
+.btn {
   color: #c09;
-  border-color: #990073;
   transform: rotate(0deg);
+}
+
+.btn-ghost {
+  border-color: #990073;
+}
+
+.btn-ghost:hover {
+  border-color: #c09;
+  background-color: #990073;
+  color: #fff;
 }
 
 .title {
@@ -34,11 +45,12 @@ p {
 .text {
   position: absolute;
   left: 20%;
-  bottom: 50%;
+  bottom: 55%;
   height: 180px;
   width: 180px;
-  z-index: 30;
-  animation: text 3.5s
+  z-index: 50;
+  animation: text 2s;
+  text-shadow: 2px 2px rgba(0, 0, 0, .2);
 }
 
 img {
@@ -47,54 +59,48 @@ img {
 
 .icecreamp {
   bottom: 100%;
-  left: 145%;
+  left: 135%;
   height: 180px;
   width: 180px;
 }
 
-.cherry {
-  /* transform: scale(.7) translate(0, -22.8em);
-  left: 135%;
-  top: 50%; */
-  z-index: 30;
-  animation: cherry 2.5s ease-in forwards;
+.icecream {
+  min-height: 480px;
 }
 
-.vanilla {
-  /* transform: scale(.7) translate(-.3em, -17.3em);
-  left: 135%;
-  top: 50%; */
-  z-index: 20;
-  animation: vanilla 2s ease-in forwards;
-}
-
-.chocolate {
-  /* transform: scale(.7) translate(1em, -12em);
-  left: 135%;
-  top: 50%; */
-  z-index: 10;
-  animation: choc-chip 1.5s ease-in forwards;
-}
-
-.mint {
-  /* transform: scale(.7) translate(0, -6em);
-  left: 135%;
-  top: 50%; */
-  animation: mint 1s ease-in forwards;
+.ingredient {
+  left: 145%;
+  bottom: 64%;
 }
 
 .cone {
-  /* transform: scale(.7) translate(0, 2em);
-  left: 135%;
-  top: 50%; */
-  animation: cone .5s ease-in forwards;
+  animation: cone-drop-in .15s .3s ease-in forwards;
 }
 
-.height {
-  height: 480px;
+.mint {
+  bottom: 33%;
+  animation: mint-drop-in .3s .3s ease-in forwards;
 }
 
-@keyframes cone {
+.chocolate-chip {
+  bottom: 38%;
+  z-index: 10;
+  animation: choc-drop-in .3s .6s ease-in forwards;
+}
+
+.vanilla-fudge {
+  bottom: 50%;
+  z-index: 20;
+  animation: vanilla-drop-in .2s .9s ease-in forwards;
+}
+
+.cherry {
+  bottom: 64%;
+  z-index: 30;
+  animation: cherry-drop-in .15s 1.5s ease-in forwards;
+}
+
+@keyframes cone-drop-in {
 
   0% {
     bottom: 100%;
@@ -106,61 +112,67 @@ img {
 
 }
 
-@keyframes mint {
+@keyframes mint-drop-in {
 
   0% {
     bottom: 100%;
   }
 
   100% {
-    bottom: 21%;
-  }
-}
-
-@keyframes choc-chip {
-  0% {
-    bottom: 100%;
-  }
-
-  100% {
-    bottom: 37%;
+    bottom: 104px;
   }
 
 }
 
-@keyframes vanilla {
+@keyframes choc-drop-in {
+
   0% {
     bottom: 100%;
   }
 
   100% {
-    bottom: 52%;
+    bottom: 170px;
   }
 
 }
 
-@keyframes cherry {
+@keyframes vanilla-drop-in {
+
   0% {
     bottom: 100%;
   }
 
   100% {
-    bottom: 68%;
+    bottom: 245px;
+  }
+
+}
+
+@keyframes cherry-drop-in {
+
+  0% {
+    bottom: 100%;
+  }
+
+  100% {
+    bottom: 320px;
   }
 
 }
 
 @keyframes text {
+
   0% {
-  opacity: 0%
+    opacity: 0;
   }
 
-  90% {
-  opacity: 50%
-  filter: blur(180px);
+  80% {
+    opacity: 80;
+    filter: blur(180px);
   }
 
   100% {
-  opacity: 100%;
+    opacity: 100;
   }
+
 }
